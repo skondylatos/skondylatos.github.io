@@ -47,18 +47,20 @@
 .masthead__menu {
 
   ul {
-    margin: 0;
+    margin-left: 5em;
     padding: 0;
     clear: both;
     list-style-type: none;
   }
 }
 
+
 .masthead__menu-item {
   background-color: var(--global-bg-color);
   display: block;
   list-style-type: none;
   white-space: nowrap;
+  font-size: 1.2em;
 
   &--lg {
     padding-right: 2em;

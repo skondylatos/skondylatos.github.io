@@ -4,14 +4,24 @@
 
 .archive {
   margin-bottom: 2em;
+  margin-top: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  p, li, dl {
+    font-size: 1.2rem; // or a SCSS variable
+  }
+
+
 
   @include breakpoint($medium) {
     @include span(12 of 12);
   }
 
   @include breakpoint($large) {
-    @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
+    @include span(9 of 12 last);
+    @include prefix(0.0 of 12);
+    @include suffix(0.0 of 12);
   }
 
   a {
@@ -37,6 +47,7 @@
   + .list__item .archive__item-title {
     margin-top: 0.5em;
   }
+  
 }
 
 .archive__item-title {
@@ -55,6 +66,7 @@
     margin-top: 1em;
     border-bottom: none;
   }
+
 }
 
 .archive__item-excerpt {

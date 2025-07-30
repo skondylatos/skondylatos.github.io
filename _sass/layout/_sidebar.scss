@@ -9,6 +9,8 @@
 .sidebar {
   -webkit-transform: translate3d(0, 0 , 0);
           transform: translate3d(0, 0 , 0);
+  
+  font-size: 1.2em;
 
   @include clearfix();
   margin-bottom: 1em;
@@ -20,12 +22,14 @@
   @media screen and (min-width: $sidebar-screen-min-width) {
     height: 100vh;
     overflow-y: auto;               // Add scrollbar if the sidebar is too long
-    position: fixed;
+    position: relative;
     padding-top: $masthead-height;
   }
 
+
   @include breakpoint($large) {
-    @include span(2 of 12);
+    @include span(3 of 12 at 1);
+
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
@@ -82,9 +86,18 @@
 
 .author__avatar {
   display: table-cell;
-  vertical-align: top;
-  width: 36px;
-  // set width only, for non-square avatars
+  vertical-align: middle;
+  margin-top: -60px;
+  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: top; 
+  
+  // margin-top: 1px;// set width only, for non-square avatars
+  // // set width only, for non-square avatars
   // height: 36px;
 
   @include breakpoint($large) {
@@ -94,7 +107,7 @@
   }
 
   img {
-    max-width: 175px;
+    max-width: 240px;
     border-radius: 50%;
 
     @include breakpoint($large) {
@@ -106,6 +119,8 @@
 
 .author__content {
   display: table-cell;
+  // align-items: center;
+  // text-align: center;
   vertical-align: top;
   padding-left: 15px;
   padding-right: 25px;
@@ -123,13 +138,13 @@
   margin: 0;
 
   @include breakpoint($large) {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
   }
 }
 .sidebar .author__name {
   font-family: $sans-serif;
-  font-size: $type-size-5;
+  font-size: $type-size-4;
 }
 
 .sidebar .author__desktop {
@@ -152,7 +167,7 @@
   margin: 0;
 
   @include breakpoint($large) {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 20px;
   }
 }
@@ -188,6 +203,8 @@
 .author__urls {
   display: none;
   position: absolute;
+  // align-items: center;
+  // text-align: center;
   right: 0;
   margin-top: 15px;
   padding: 10px;
