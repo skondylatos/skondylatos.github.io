@@ -10,7 +10,7 @@ redirect_from:
 
 I am a researcher at [Orion Lab](https://orionlab.space.noa.gr), a joint research group of the National Observatory of Athens and the National and Kapodistrian University of Athens. My work focuses on the application of deep learning techniques to Earth Observation.
 I am currently nearing the completion of my PhD in _Uncertainty-Aware Deep Learning for Earth Observation_ at the University of Valencia under the supervision of [Gustau Camps-Valls](https://www.uv.es/gcamps/) and [Ioannis Papoutsis](https://orionlab.space.noa.gr/author/ioannis-papoutsis/). 
-I am also co-founder of [Manteo AI](https://manteo.ai), a chat-map assistant that simplifies access to Earth observation data and insights.
+I am also co-founder of [Manteo AI](https://manteo.ai), a chat-map assistant that simplifies access to Earth Observation data and insights.
 
 ## Research ##
 
